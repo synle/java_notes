@@ -58,3 +58,15 @@ int randInt0_9 = rand.nextInt(10); // random from 0 to 9 (including 9)
 - Encapsulation: hide data and expose it to the outside via a method.
 - Inheritance: to minimize duplicate codes. Could be tightly coupled between subclass and superclass, harder to debug
 - Polymorphism: runtime (method override) and compile time (method overloading)
+
+
+## Functional programing
+- Objects are immutalble
+
+```
+Predicate isOdd = n -> n % 2 != 0;
+isOdd.test(5);
+
+Answerable phone = () -> 'Hello';
+phone.answer();
+```
