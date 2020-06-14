@@ -39,3 +39,22 @@ int[] numbers2 = {1,2,3,4,5}
 - Java uses call by value, so the original arguments of a function never change.
 
 
+## Core Libs
+- `java.lang`: fundamental to core math, boolean and byte and core java.
+- `java.util`: scanning, formatter, data manipulation (random)
+- `java.net`: infra for networking.
+
+
+## Generate random number
+```
+import java.util.Random;
+
+Random rand = new Random();
+int randInt = rand.nextInt();
+int randInt0_9 = rand.nextInt(10); // random from 0 to 9 (including 9)
+```
+
+## OOP
+- Encapsulation: hide data and expose it to the outside via a method.
+- Inheritance: to minimize duplicate codes. Could be tightly coupled between subclass and superclass, harder to debug
+- Polymorphism: runtime (method override) and compile time (method overloading)
